@@ -1,4 +1,5 @@
 import React from 'react'
+import CreateRoomBtnModal from './CreateRoomBtnModal'
 import DashBoardToggle from './dashboard/DashBoardToggle'
 
 const Sidebar = () => {
@@ -7,6 +8,7 @@ const Sidebar = () => {
       
       <div>
         <DashBoardToggle />
+        <CreateRoomBtnModal />
       </div>
       bottom
     </div>
