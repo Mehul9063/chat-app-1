@@ -4,6 +4,7 @@ import { Icon, ButtonToolbar } from 'rsuite'
 import { useCurrentRoom } from '../../../context/currentRoom.context'
 import { useMediaQuery } from '../../../misc/custom-hooks'
 import RoomInfoBtnModal from './RoomInfoBtnModal'
+import EditRoomBtnDrawer from './EditRoomBtnDrawer'
 
 const Top = () => {
   
@@ -30,7 +31,7 @@ const Top = () => {
         </h4>
 
         <ButtonToolbar className="white-space: no-wrap">
-            todo
+            <EditRoomBtnDrawer />
         </ButtonToolbar>
 
       </div>
