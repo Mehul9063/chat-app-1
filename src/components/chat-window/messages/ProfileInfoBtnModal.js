@@ -4,7 +4,7 @@ import ProfileAvatar from '../../ProfileAvatar'
 import { useModalState } from '../../../misc/custom-hooks'
 
 
-const ProfileInfoBtnModal = ({ profile,...btnProps }) => {
+const ProfileInfoBtnModal = ({ profile,children,...btnProps }) => {
   
   const {isOpen,open,close} = useModalState()
 
@@ -35,6 +35,7 @@ const ProfileInfoBtnModal = ({ profile,...btnProps }) => {
           <p>Member since {MemberSince}</p>
         </Modal.Body>
         <Modal.Footer>
+          {children}
           <Button block onClick={close}>Close</Button>
         </Modal.Footer>
       </Modal>
