@@ -7,6 +7,7 @@ import { auth } from '../../../misc/firebase'
 import PresenceDot from '../../PresenceDot'
 import ProfileAvatar from '../../ProfileAvatar'
 import ProfileInfoBtnModal from './ProfileInfoBtnModal'
+import IconBtnControl from './IconBtnControl'
 
 const MessageItem = ({message,handleAdmin}) => {
   
@@ -41,6 +42,15 @@ const MessageItem = ({message,handleAdmin}) => {
         <TimeAgo
           datetime={createdAt}
           className="font-normal text-black-45 ml-2"
+        />
+        <IconBtnControl
+          // eslint-disable-next-line no-constant-condition
+          {...(true ? {color: 'red'} : {})}
+          isVisible
+          iconName="heart"
+          tooltip="Like this message"
+          onClick={() => {}}
+          badgeContent={5}
         />
       </div>
       <div>
